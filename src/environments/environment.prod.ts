@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  soket_url: "https://locate-api.herokuapp.com"
 };

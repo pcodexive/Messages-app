@@ -6,8 +6,9 @@ import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { AppComponent } from './app.component';
 import { DocumentListComponent } from './components/document-list/document-list.component';
 import { DocumentComponent } from './components/document/document.component';
+import { environment } from 'src/environments/environment';
 
-const config: SocketIoConfig = { url: 'http://localhost:4444', options: {} };
+const config: SocketIoConfig = { url: environment.soket_url, options: {} };
 
 @NgModule({
   declarations: [
